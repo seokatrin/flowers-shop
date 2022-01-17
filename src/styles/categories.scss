@@ -1,0 +1,33 @@
+@import "./mixin";
+.category {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  .category__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+    li {
+      padding: 5px;
+      cursor: pointer;
+      @include bordCol(transparent);
+    }
+    li:hover,
+    li.active {
+      @include bordCol(#fff);
+    }
+    li:not(:last-child) {
+      margin: 0 15px 0 0;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+@media (max-width: 710px) {
+    .category__items {
+        flex-wrap: wrap;
+    }
+}

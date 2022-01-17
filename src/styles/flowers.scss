@@ -1,0 +1,50 @@
+@import "./mixin";
+.flowers {
+  padding: 0 0 20px 0;
+}
+.flowers__body {
+  background-color: #faf8f8;
+  @include bordCol(#efe7e7);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 15px;
+  .flowers__column {
+    margin: -1px 0 0 -1px;
+    @include bordCol(rgba(221, 218, 218, 0.6));
+    .item-flower {
+      padding: 10px 10px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .item-flower__img {
+        width: 100%;
+        height: 300px;
+        margin: 0 0 10px 0;
+      }
+      .item-flower__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      span {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  svg {
+    cursor: pointer;
+  }
+}
+@media (max-width: 767px) {
+  .flowers__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 460px) {
+  .flowers__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

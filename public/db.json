@@ -1,0 +1,220 @@
+{
+    "flowers": [
+        {
+            "id": 0,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/5/9/item_59/shop_property_file_59_42.jpg",
+            "name": "Альпийский день",
+            "price":  3150,
+            "category": "авторские букеты",
+            "rating": 4,
+            "details": "Дельфиниум – 2, Матиола – 3, Матрекария – 5, Хрихантема Сантини – 3, Альстромерия – 3, Лимониум – 2, Диантус – 3, Оформление."
+          },
+        {
+            "id": 1,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/1/0/4/item_104/shop_property_file_104_51.jpg",
+            "name": "Апельсиновый пунш",
+            "price":  4040,
+            "category": "авторские букеты",
+            "rating": 1,
+            "details": "Орхидея – 3, Роза кустовая – 4, Роза пионовидная – 3, Хризантема кустовая Сантини – 3, Эустома – 4, Папоротник – 5, Тюльпан – 3,Оформление"
+          },
+        {
+            "id": 2,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/5/3/item_53/item_53.jpg",
+            "name": "Красота Афродиты",
+            "price":  8630 ,
+            "category": "авторские букеты",
+            "rating": 1,
+            "details": "ортензия 3, Орхидея 7, Пион 7, Эустома 5, Роза кустовая пионовидная 5, Диантус 7, авторское оформление."
+          },
+        {
+            "id": 3,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/6/4/item_64/item_64.jpg",
+            "name": "Молли",
+            "price":  7170  ,
+            "category": "авторские букеты",
+            "rating": 1,
+            "details": "Пион – 6, Эустома – 4, Роза кустовая пионовидная – 5, Орхидея – 5, Озотамнус – 4, Папоротник – 5, Эвкалипт – 3, Роза – 3, Оформление."
+          },
+        {
+            "id": 4,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/6/4/item_64/item_64.jpg",
+            "name": "Сказочные Мечты",
+            "price":  2820,
+            "category": "авторские букеты",
+            "rating": 1,
+            "details": "Гортензия – 3, Гипсофила – 3, Оформление"
+          },
+        {
+            "id": 5,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/6/1/item_61/shop_property_file_61_37.jpg",
+            "name": "Сказочные Мечты",
+            "price":  3816,
+            "category": "авторские букеты",
+            "rating": 1,
+            "details": "Хризантема кустовая – 21, Матрекария – 7, Оформление."
+          },
+        {
+            "id": 6,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/7/7/item_77/item_77.jpg",
+            "name": "ропический смузи",
+            "price":  3160,
+            "category": "авторские букеты",
+            "rating": 1,
+            "details": "Гортензия – 1, Альстромерия – 3, Роза кустовая пионовидная – 1, Эстома – 3,Роза кустовая – 2, Листья дерева Чику – 3, Оформление."
+          },
+        {
+            "id": 7,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/5/2/item_52/item_52.jpg",
+            "name": "Эйфория",
+            "price":  4329,
+            "category": 0,
+            "rating": 1,
+            "details": "Гортензия – 1, Альстромерия – 3, Роза кустовая пионовидная – 1, Эстома – 3,Роза кустовая – 2, Листья дерева Чику – 3, Оформление."
+          },
+        {
+            "id": 8,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/4/8/item_48/shop_property_file_48_32.jpg",
+            "name": "Виктория",
+            "price":  4900,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Коробка, Эустома 4, Роза пионовидная  5, Диантус 7, Эвкалипт  3, Гортензия 1."
+          },
+        {
+            "id": 9,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/7/2/item_72/shop_property_file_72_45.jpg",
+            "name": "Коралловый риф",
+            "price":  9740,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Корзина большая, Роза – 11, Роза кустовая пионовидная – 7, Гвоздика – 8, Маттиола – 5, Пион – 3, Эустома – 7, Папоротник – 9"
+          },
+        {
+            "id": 10,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/9/7/item_97/shop_property_file_97_49.jpg",
+            "name": "Пудровая вуаль",
+            "price":  8500,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Коробка Средняя, Пион – 5, Эустома – 7, Роза пионовидная – 7, Роза кустовая пионовидная – 6, Гипсофила – 3."
+          },
+        {
+            "id": 11,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/4/9/item_49/shop_property_file_49_33.jpg",
+            "name": "Свежесть Ниагары",
+            "price":  8500,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Коробка Средняя, Пион – 5, Эустома – 7, Роза пионовидная – 7, Роза кустовая пионовидная – 6, Гипсофила – 3."
+          },
+        {
+            "id": 12,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/7/5/item_75/shop_property_file_75_46.jpg",
+            "name": "Таинственный маракеш",
+            "price":  6550,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Коробка средняя, Роза – 7, Роза кустовая пионовидная – 5, Роза пионовидная – 3, Эустома – 5, Диантус – 5, Папоротник – 5, Эвкалипт – 3, Клематис – 3."
+          },
+        {
+            "id": 13,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/1/0/2/item_102/shop_property_file_102_50.jpg",
+            "name": "Утро в Париже",
+            "price":  5330,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Коробка малая, Папоротник – 7, Гвоздика – 9, Эустома – 5, Роза кустовая – 5, Ранункулюс – 3, Роза – 5"
+          },
+        {
+            "id": 14,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/5/6/item_56/item_56.jpg",
+            "name": "Радость встречи",
+            "price":  3550,
+            "category": "коробки и корзины с цветами",
+            "rating": 1,
+            "details": "Коробка средняя, Альстромерия – 5, Роза Кения – 15, Эустома – 5."
+          },
+        {
+            "id": 15,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/7/8/item_78/shop_property_file_78_47.jpg",
+            "name": "Крем Брюле",
+            "price":  3280,
+            "category": "монобукеты",
+            "rating": 1,
+            "details": "Роза пионовидная – 11, Оформление."
+          },
+        {
+            "id": 16,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/6/8/item_68/shop_property_file_68_44.jpg",
+            "name": "Малиновый закат",
+            "price":  7200,
+            "category": "монобукеты",
+            "rating": 1,
+            "details": "Роза кустовая – 25, Оформление."
+          },
+        {
+            "id": 17,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/6/0/item_60/shop_property_file_60_36.jpg",
+            "name": "Нежность прикосновений",
+            "price":  3450,
+            "category": "монобукеты",
+            "rating": 1,
+            "details": "Гортензия – 5, Оформление."
+          },
+        {
+            "id": 18,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/7/9/item_79/shop_property_file_79_48.jpg",
+            "name": "Раф солёный мёд",
+            "price":  2130,
+            "category": "монобукеты",
+            "rating": 1,
+            "details": "Маттиола – 11, Оформление"
+          },
+        {
+            "id": 19,
+            "imageUrl": "https://crocus174.ru/upload/shop_1/0/7/9/item_79/shop_property_file_79_48.jpg",
+            "name": "Раф солёный мёд",
+            "price":  2130,
+            "category": "монобукеты",
+            "rating": 1,
+            "details": "Маттиола – 11, Оформление"
+          },
+        {
+            "id": 20,
+            "imageUrl": "https://img.joomcdn.net/9994593a8a1980b675e7cddd41aacbb426bfe0a9_original.jpeg",
+            "name": "Рождественский венок",
+            "price":  2241,
+            "category": "зимняя коллекция",
+            "rating": 1,
+            "details": "Ель Нобилис, новогодний декор, лента"
+          },
+        {
+            "id": 21,
+            "imageUrl": "https://fl-er.ru/wp-content/uploads/2018/07/novogodnyaya-kompoziciya-art-30-128-detail-1.jpg",
+            "name": "Новогодняя елка",
+            "price":  4000,
+            "category": "зимняя коллекция",
+            "rating": 1,
+            "details": "Ель Нобилис, новогодний декор"
+          },
+        {
+            "id": 22,
+            "imageUrl": "https://cdn2.flowwow.com/data/flowers/1000x1000/94/1608584080_20051694.jpg",
+            "name": "Композиция в ящике 'Рождественское чудо'",
+            "price":  2500,
+            "category": "зимняя коллекция",
+            "rating": 1,
+            "details": "Ель Нобилис, новогодний декор, деревянный ящик"
+          },
+        {
+            "id": 23,
+            "imageUrl": "https://cdn1.ozone.ru/s3/multimedia-2/6162167978.jpg",
+            "name": "Композиция со свечой 'Новогоднее чудо'",
+            "price":  2500,
+            "category": "зимняя коллекция",
+            "rating": 1,
+            "details": "Ель Нобилис, свечb, новогодний декор"
+          }
+        ]
+}

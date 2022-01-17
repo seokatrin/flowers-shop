@@ -1,0 +1,73 @@
+@import './mixin';
+
+.header {
+      .header__cart {
+        padding: 30px 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .header__actions {
+        display: flex;
+        align-items: center;
+        .header__research {
+          position: relative;
+          display: flex;
+          align-items: center;
+          svg {
+            margin: 0 15px;
+            cursor: pointer;
+          }
+
+          input {
+            height: 45px;
+            width: 250px;
+            @include bordCol(#ccc);
+            border-radius: 20px;
+            padding: 10px 15px;
+          }
+        } 
+        .header__shopCart {
+          position: relative;
+          .header__count {
+            position: absolute;
+            top: -80%;
+            left: -100%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(130, 71, 179);
+            border-radius: 50%;
+            color: #fff;
+            font-size: 11px;
+          }
+        }
+      }
+}
+.contacts {
+    background-color: #f1eeee;
+  
+    .contacts__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+  
+      color: #000;
+      .contacts__location {
+        padding: 15px 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          max-height: 100%;
+        }
+      }
+      > p {
+        font-weight: 600;
+      }
+    }
+    
+  }
+  
