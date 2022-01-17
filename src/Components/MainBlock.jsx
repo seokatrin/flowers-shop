@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getFlowers, setCategory, setSortBy } from "../redux/flowers";
 import Categories from "./Categories";
@@ -23,14 +23,14 @@ const MainBlock = () => {
     useEffect(() => {
       dispatch(getFlowers(activeCategory, activeSortBy));
     }, [activeCategory, activeSortBy]);
-  
-    const setcategory = (category) => {
+
+    const setcategory = useCallback((category) => {
       dispatch(setCategory(category));
-    };
+    }, [])
   
-    const setSorting = (sortBy) => {
+    const setSorting = useCallback((sortBy) => {
       dispatch(setSortBy(sortBy));
-    };
+    }, []);
   
     return (
       <main className="page">

@@ -4,7 +4,8 @@ import "../styles/main.scss";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-function Categories({ categories, onClickCategory, activeCategory }) {
+const Categories = React.memo(function Categories({ categories, onClickCategory, activeCategory }) {
+  
   return (
     <div className="page__category category">
       <div className="category__container _container">
@@ -25,7 +26,7 @@ function Categories({ categories, onClickCategory, activeCategory }) {
       <img src={rose} alt="rose" />
     </div>
   );
-}
+})
 
 Categories.propTypes = {
   categories: PropTypes.arrayOf(PropTypes.string).isRequired,

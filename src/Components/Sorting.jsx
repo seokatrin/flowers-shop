@@ -10,7 +10,8 @@ const sortBy = [
   { name: "убыванию цены", type: "price", order: "desc" },
 ];
 
-function Sorting({ setSorting, activeSortBy }) {
+const Sorting = React.memo(function Sorting({ setSorting, activeSortBy }) {
+  
   const ref = useRef();
   const [windowIsOpen, setwindowIsOpen] = useWindowEvent(ref);
 
@@ -65,7 +66,7 @@ function Sorting({ setSorting, activeSortBy }) {
       </div>
     </div>
   );
-}
+});
 
 Sorting.propTypes = {
   setSorting: PropTypes.func.isRequired,
