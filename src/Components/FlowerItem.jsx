@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 function FlowerItem({ imgUrl, title, price, id }) {
   const dispatch = useDispatch();
   const handleOnCartClick = () => {
-    dispatch(addFlowersToCart({ imgUrl, title, price, id }));
+    dispatch(addFlowersToCart({ imageUrl: imgUrl, name: title, price, id }));
   };
   return (
     <div className="flowers__column">

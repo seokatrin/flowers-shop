@@ -13,9 +13,9 @@ const ShopCartItem = ({ flower, onPlusClick, onMinusClick, onRemoveClick }) => {
     <div className="shopCart__body">
       <div className="shopCart__main">
         <div className="shopCart__img">
-          <img src={flower.imgUrl} alt={flower.title} />
+          <img src={flower.imageUrl} alt={flower.title} />
         </div>
-        {flower.title}
+        {flower.name}
       </div>
       <div className="shopCart__info">
         <span>{flower.price} руб.</span>
