@@ -1,7 +1,6 @@
 import { flowersApi } from "../api";
 
 const SET_FLOWERS = "flowers/SET-FLOWERS";
-const SET_IS_FETCHING = "flowers/SET-IS-FETCHING";
 const SET_FLOWERS_DETAIS = "flowers/SET-FLOWERS-DETAIS";
 const SET_CATEGORY = "flowers/SET-CATEGORY";
 const SET_SORT_BY = "flowers/SET-SORT_BY";
@@ -49,7 +48,7 @@ const setFlowers = (payload) => ({
   type: SET_FLOWERS,
   payload
 });
-// const setIsFetching = (payload) => ({ type: SET_IS_FETCHING, payload });
+
 const setFlowersDetails = (payload) => ({ type: SET_FLOWERS_DETAIS, payload });
 export const setCategory = (payload) => ({ type: SET_CATEGORY, payload });
 export const setSortBy = (payload) => ({ type: SET_SORT_BY, payload });
@@ -57,13 +56,11 @@ export const setSortBy = (payload) => ({ type: SET_SORT_BY, payload });
 export const getFlowers =
   (category = 0, sortBy = { type: "rating", order: "asc" }) =>
   async (dispatch) => {
-    // dispatch(setIsFetching(true));
     const response = await flowersApi.getFlowers(category, sortBy);
     dispatch(setFlowers(response.data));
   };
 
 export const getFlowersDetails = (id) => async (dispatch) => {
-  // dispatch(setIsFetching(true));
   const response = await flowersApi.getOneFlower(id);
   dispatch(setFlowersDetails(response.data[0]));
 };
