@@ -1,13 +1,7 @@
 import { useState, useEffect } from "react";
 
-// const onChangeVisiblePopup = () => {
-//   setvisiblePopup(true);
-// };
-
-
-
 export function useWindowEvent(ref) {
-  const [setvisiblePopup, setVisiblePopup] = useState(false);
+  const [visiblePopup, setVisiblePopup] = useState(false);
   const handleOutsideClick = (e) => {
     if (!e.path.includes(ref.current)) {
         setVisiblePopup(false)
@@ -19,5 +13,5 @@ export function useWindowEvent(ref) {
       document.body.removeEventListener("click", handleOutsideClick);
     };
   }, []);
-  return [setvisiblePopup, setVisiblePopup]
+  return [visiblePopup, setVisiblePopup]
 }
