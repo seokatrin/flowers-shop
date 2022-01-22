@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getFlowers, setCategory, setSortBy } from "../redux/flowers";
+import { getFlowers, setActivePage, setCategory, setSortBy } from "../redux/flowers";
 import Categories from "./Categories";
 import Flowers from "./Flowers";
 import Sorting from "./Sorting";
@@ -15,7 +15,7 @@ const categories = [
 
 const MainBlock = () => {
   const dispatch = useDispatch();
-  const { flowers, activeCategory, activeSortBy } = useSelector(
+  const { flowers, activeCategory, activeSortBy, activePage } = useSelector(
     ({ flowers }) => flowers
   );
 
@@ -24,17 +24,16 @@ const MainBlock = () => {
   }, [activeCategory, activeSortBy]);
 
   const setcategory = useCallback((category) => {
+    
     dispatch(setCategory(category));
-    setActivePage(0);
   }, []);
 
   const setSorting = useCallback((sortBy) => {
     dispatch(setSortBy(sortBy));
   }, []);
 
-  const [activePage, setActivePage] = useState(0);
   const handleOnPageClick = useCallback((page) => {
-    setActivePage(page);
+    dispatch(setActivePage(page));
   }, []);
 
   return (
