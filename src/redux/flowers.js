@@ -27,7 +27,7 @@ export const flowers = (state = initialState, action) => {
     case SET_FLOWERS_DETAIS:
       return {
         ...state,
-        flowersDetails: action.payload
+        flowersDetails: action.payload,
       };
     case SET_CATEGORY:
       return {
@@ -44,11 +44,7 @@ export const flowers = (state = initialState, action) => {
   }
 };
 
-const setFlowers = (payload) => ({
-  type: SET_FLOWERS,
-  payload
-});
-
+const setFlowers = (payload) => ({type: SET_FLOWERS, payload});
 const setFlowersDetails = (payload) => ({ type: SET_FLOWERS_DETAIS, payload });
 export const setCategory = (payload) => ({ type: SET_CATEGORY, payload });
 export const setSortBy = (payload) => ({ type: SET_SORT_BY, payload });

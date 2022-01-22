@@ -1,15 +1,19 @@
-import React from "react";
 import FlowerItem from "./FlowerItem";
 import "../styles/main.scss";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import Paginator from "../Pagination/Paginator";
 
-function Flowers({ flowers }) {
-
+function Flowers({ flowers, activePage, onPageClick }) {
+  const pageLimit = 9;
+  const shownFlowers = flowers.filter(
+    (item, index) =>
+      activePage * pageLimit <= index && index < (activePage + 1) * pageLimit
+  );
   return (
     <div className="page__flowers flowers">
       <div className="flowers__container _container">
         <div className="flowers__body">
-          {flowers.map((item) => {
+          {shownFlowers.map((item) => {
             return (
               <FlowerItem
                 key={item.id}
@@ -21,16 +25,24 @@ function Flowers({ flowers }) {
             );
           })}
         </div>
+        {flowers.length > pageLimit && (
+          <Paginator
+            activePage={activePage}
+            itemsCount={flowers.length}
+            onPageClick={onPageClick}
+            pageLimit={pageLimit}
+          />
+        )}
       </div>
     </div>
   );
 }
 
 Flowers.propTypes = {
-  flowers: PropTypes.array
-}
+  flowers: PropTypes.array,
+};
 Flowers.defaultProps = {
-  flowers: []
-}
+  flowers: [],
+};
 
 export default Flowers;
