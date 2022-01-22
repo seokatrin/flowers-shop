@@ -7,6 +7,7 @@ function Research() {
   const allFlowers = useSelector(({ flowers }) => flowers.flowersForResearch);
 
   const ref = useRef()
+  
   const [researchIsOpen, setResearchIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [matchedFlowers, setmatchedFlowers] = useState([]);
@@ -16,14 +17,20 @@ function Research() {
     setResearchIsOpen(!researchIsOpen);
     setmatchedFlowers([])
   };
+  const handleOnClickLink = () => {
+    setwindowIsOpen(false)
+  }
   const handleOnChange = (e) => {
     setInputValue(e.target.value);
     if(e.target.value.length > 0) {
       const flowers = allFlowers.filter((item) =>
       item.name.toLowerCase().includes(e.target.value.toLowerCase())
+      
     );
-    setmatchedFlowers(flowers);
-    setwindowIsOpen(true)
+    if(flowers.length > 0) {
+      setmatchedFlowers(flowers);
+      setwindowIsOpen(true)
+    }
   } else {
     setwindowIsOpen(false)
   }
@@ -32,16 +39,16 @@ function Research() {
   return (
     <div className="header__research">
       {researchIsOpen && (
-        <div>
+        <div ref={ref}>
           <input
             placeholder="Поиск..."
             value={inputValue}
             onChange={handleOnChange}
           />
           {windowIsOpen && (
-            <div className="header__window window">
+            <div className="header__window window" >
               {matchedFlowers.map((item) => (
-                <Link to={`/${item.id}`} key={item.id}>
+                <Link to={`/${item.id}`} key={item.id} onClick={handleOnClickLink}>
                   {item.name}
                 </Link>
               ))}
