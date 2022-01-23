@@ -6,7 +6,7 @@
 
   .details__img {
     height: 450px;
-    flex: 0 1 400px;
+    flex: 0 0 350px;
     margin: 0 50px 0 0;
     img {
       width: 100%;
@@ -41,8 +41,6 @@
               margin: 20px 0 0 0;
           }
       }
-      
-      
   }
 }
 .buttons {
@@ -59,8 +57,7 @@
         > * {
           margin-top: 20px;
         }
-    }
-    
+    }    
 }
 @media (max-width: 678px) {
   .details__body {

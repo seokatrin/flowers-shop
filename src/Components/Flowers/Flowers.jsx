@@ -40,9 +40,12 @@ function Flowers({ flowers, activePage, onPageClick }) {
 
 Flowers.propTypes = {
   flowers: PropTypes.array,
+  activePage: PropTypes.number,
+  onPageClick: PropTypes.func
 };
 Flowers.defaultProps = {
   flowers: [],
+  activePage: 0,
 };
 
 export default Flowers;

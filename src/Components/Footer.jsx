@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../img/header/logo.svg";
 import vk from "../img/socials/vk.svg";
 import insta from "../img/socials/instagram.svg";
 import twitter from "../img/socials/twitter.svg";
