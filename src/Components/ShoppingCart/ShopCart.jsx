@@ -6,8 +6,8 @@ import {
   decreaseFlowersToCart,
   deleteFlowersFromCart,
   increaseFlowersToCart,
-} from "../redux/shoppingCart";
-import "../styles/main.scss";
+} from "../../redux/shoppingCart";
+import "../../styles/main.scss";
 import ShopCartItem from "./ShopCartItem";
 import EmptyCart from "./EmptyCart";
 
@@ -34,7 +34,6 @@ function ShopCart() {
     dispatch(deleteFlowersFromCart(id));
   };
 
-
   return (
     <div className="shopCart">
       <div className="blackLine"></div>
@@ -54,7 +53,10 @@ function ShopCart() {
           ))}
           <div className="shopCart__total">Итого: {totalFlowersPrice} руб.</div>
           <div className="shopCart__buttons buttons">
-            <button className="button buttons--white" onClick={handleOnGoBackClick}>
+            <button
+              className="button buttons--white"
+              onClick={handleOnGoBackClick}
+            >
               вернуться назад
             </button>
             <Link to="/form" className="button buttons--black">

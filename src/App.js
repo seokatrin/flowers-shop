@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import FlowerDetails from "./Components/FlowerDetails";
+import FlowerDetails from "./Components/Flowers/FlowerDetails";
 import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import MainBlock from "./Components/MainBlock";
-import ShopCart from "./Components/ShopCart";
+import ShopCart from "./Components/ShoppingCart/ShopCart";
 import ContactForm from "./Form/ContactForm";
 
 function App() {

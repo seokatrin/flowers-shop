@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/main.scss";
-import locationSVG from "../img/header/location.svg";
-import logoSvg from "../img/header/logo.svg";
+import "../../styles/main.scss";
+import locationSVG from "../../img/header/location.svg";
+import logoSvg from "../../img/header/logo.svg";
 import Research from "./Research";
 import ShopCartLink from "./ShopCartLink";
 import { Link } from "react-router-dom";

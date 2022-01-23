@@ -1,7 +1,7 @@
 import FlowerItem from "./FlowerItem";
-import "../styles/main.scss";
+import "../../styles/main.scss";
 import PropTypes from "prop-types";
-import Paginator from "../Pagination/Paginator";
+import Paginator from "../../Pagination/Paginator";
 
 function Flowers({ flowers, activePage, onPageClick }) {
   const pageLimit = 9;

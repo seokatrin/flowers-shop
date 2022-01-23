@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useMatch, useNavigate } from "react-router-dom";
-import { getFlowersDetails } from "../redux/flowers";
-import { addFlowersToCart } from "../redux/shoppingCart";
-import "../styles/main.scss";
+import { getFlowersDetails } from "../../redux/flowers";
+import { addFlowersToCart } from "../../redux/shoppingCart";
+import "../../styles/main.scss";
 
 function FlowerDetails() {
   const math = useMatch("/:id/");
@@ -44,7 +44,10 @@ function FlowerDetails() {
               <button className="button buttons--black" onClick={addFlowers}>
                 в корзину
               </button>
-              <button className="button buttons--white" onClick={handleOnGoBack}>
+              <button
+                className="button buttons--white"
+                onClick={handleOnGoBack}
+              >
                 вернуться назад
               </button>
             </div>

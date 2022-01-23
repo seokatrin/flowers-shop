@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addFlowersToCart } from "../redux/shoppingCart";
-import "../styles/main.scss";
-import PropTypes from 'prop-types';
+import { addFlowersToCart } from "../../redux/shoppingCart";
+import "../../styles/main.scss";
+import PropTypes from "prop-types";
 
 function FlowerItem({ imgUrl, title, price, id }) {
   const dispatch = useDispatch();
@@ -41,10 +41,10 @@ function FlowerItem({ imgUrl, title, price, id }) {
 }
 
 FlowerItem.propTypes = {
-  imgUrl: PropTypes.string.isRequired, 
-  title: PropTypes.string.isRequired, 
-  price: PropTypes.number.isRequired, 
-  id: PropTypes.number.isRequired
-} 
+  imgUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
+};
 
 export default FlowerItem;

@@ -2,7 +2,7 @@ import React, { useCallback, useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getFlowers, setActivePage, setCategory, setSortBy } from "../redux/flowers";
 import Categories from "./Categories";
-import Flowers from "./Flowers";
+import Flowers from "./Flowers/Flowers";
 import Sorting from "./Sorting";
 
 const categories = [

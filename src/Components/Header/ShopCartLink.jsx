@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import '../styles/main.scss'
+import '../../styles/main.scss';
 
 function ShopCartLink() {
   const count = useSelector(({shoppingCart}) => shoppingCart.totalFlowersCount)
