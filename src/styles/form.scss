@@ -1,0 +1,57 @@
+@import "./mixin.scss";
+.contactForm {
+  
+  .contactForm__container {
+    padding: 50px 0;
+  }
+  .contactForm__form {
+    margin: 50px 0;
+    max-width: 450px;
+    padding: 20px 20px 30px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+    border-radius: 7px;
+
+    .contactForm__button {
+      margin: 25px 0 0 0;
+    }
+    .contactForm__text {
+      color: #ccc;
+      font-size: 12px;
+    }
+    .contactForm__title {
+      font-size: 26px;
+      line-height: 1.2;
+      margin: 0 0 25px 0;
+    }
+    .contactForm__body {
+        position: relative;
+      .contactForm__input {
+        width: 100%;
+        margin: 0 0 15px 0;
+        font-size: 16px;
+        padding: 10px 15px;
+        @include bordCol(rgba(199, 198, 198, 0.8));
+        border-radius: 5px;
+        &::placeholder {
+          color: #000;
+        }
+        &.contactForm__input--error {
+            border-color: #8147b1;
+        }
+      }
+      .error {
+          width: 50%;
+          z-index: 2;
+          background-color: #fff;
+          position: absolute;
+          top: -15%;
+          right: -2%;
+          color: #8147b1;
+          padding: 10px;
+          box-shadow:  5px 5px 10px rgba($color: #000000, $alpha: 0.5);;
+            border-radius: 5px;
+        }
+    }
+  }
+}

@@ -41,10 +41,10 @@ function FlowerDetails() {
               <span>{flowersDetails.details}</span>
             </div>
             <div className="details__buttons buttons">
-              <button className="buttons--black" onClick={addFlowers}>
+              <button className="button buttons--black" onClick={addFlowers}>
                 в корзину
               </button>
-              <button className="buttons--white" onClick={handleOnGoBack}>
+              <button className="button buttons--white" onClick={handleOnGoBack}>
                 вернуться назад
               </button>
             </div>

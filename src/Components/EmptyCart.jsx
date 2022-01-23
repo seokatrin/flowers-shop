@@ -9,7 +9,7 @@ function EmptyCart({OnGoBackClick}) {
           <div className="emptyCart__block">
             <img src={emptyCartImg} alt="empty cart" />
             <div className="buttons">
-              <button className="buttons--white" onClick={OnGoBackClick}>
+              <button className="button buttons--white" onClick={OnGoBackClick}>
                 вернуться назад
               </button>
             </div>

@@ -1,10 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   decreaseFlowersToCart,
-  deleteAllFlowers,
   deleteFlowersFromCart,
   increaseFlowersToCart,
 } from "../redux/shoppingCart";
@@ -35,10 +34,6 @@ function ShopCart() {
     dispatch(deleteFlowersFromCart(id));
   };
 
-  const handleOnClickOrder = () => {
-    alert("Ваш заказ оформлен!");
-    dispatch(deleteAllFlowers());
-  };
 
   return (
     <div className="shopCart">
@@ -59,12 +54,12 @@ function ShopCart() {
           ))}
           <div className="shopCart__total">Итого: {totalFlowersPrice} руб.</div>
           <div className="shopCart__buttons buttons">
-            <button className="buttons--white" onClick={handleOnGoBackClick}>
+            <button className="button buttons--white" onClick={handleOnGoBackClick}>
               вернуться назад
             </button>
-            <button className="buttons--black" onClick={handleOnClickOrder}>
+            <Link to="/form" className="button buttons--black">
               оформить
-            </button>
+            </Link>
           </div>
         </div>
       ) : (
