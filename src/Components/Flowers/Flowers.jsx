@@ -12,6 +12,14 @@ function Flowers({ flowers, activePage, onPageClick }) {
   return (
     <div className="page__flowers flowers">
       <div className="flowers__container _container">
+      {flowers.length > pageLimit && (
+          <Paginator
+            activePage={activePage}
+            itemsCount={flowers.length}
+            onPageClick={onPageClick}
+            pageLimit={pageLimit}
+          />
+        )}
         <div className="flowers__body">
           {shownFlowers.map((item) => {
             return (
@@ -25,14 +33,7 @@ function Flowers({ flowers, activePage, onPageClick }) {
             );
           })}
         </div>
-        {flowers.length > pageLimit && (
-          <Paginator
-            activePage={activePage}
-            itemsCount={flowers.length}
-            onPageClick={onPageClick}
-            pageLimit={pageLimit}
-          />
-        )}
+        
       </div>
     </div>
   );
